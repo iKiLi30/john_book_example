@@ -4,17 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Формыt</title>
+    <title>Формы</title>
 </head>
 <body>
     <p>Здесь будут отображены элементы форм: </p>
     <p>Форма текстового ввода:</p>
     <form action="https://www/somesite.som/login.php" method="get">
         <p>Имя пользователя:
-            <input type="text" name="username" size="15" maxlength="30" />
+            <input type="text" name="username" />
         </p>
-
+        <p>Пароль:
+           <input type="password" name="password" />
+        </p>
+        
     </form>
-    
+    <p>Текстовое поле:</p>   
+    <form action="https:somesite.som/profile.php">
+        <p>Что вы делали прошлым летом?</p>
+        <textarea name="comments" cols="100" rows="10">Ваши рассуждения тут...</textarea>
+    </form>
+    <p>Форма-переключатель:</p>
+    <form action="https://somesite.som/profile.php"> 
+        <p>Выберите язык программирования: <br>
+            <input type="radio" name="genre" value="Python" checked="checked" /> Python
+            <input type="radio" name="genre" value="Java" /> Java
+            <input type="radio" name="genre" value="C++"/>  C++
+            <input type="radio" name="genre" value="Ruby"/> Ruby
+        </p>
+    </form>
+    <p>Форма-флаг:</p>
 </body>
 </html>

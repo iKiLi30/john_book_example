@@ -8,6 +8,7 @@
 </head>
 <body>
     <p>Здесь будут отображены элементы форм: </p>
+    <br>
     <p>Форма текстового ввода:</p>
     <form action="https://www/somesite.som/login.php" method="get">
         <p>Имя пользователя:
@@ -17,12 +18,14 @@
            <input type="password" name="password" />
         </p>
         
-    </form>
+    </form> <br><br>
+    
     <p>Текстовое поле:</p>   
     <form action="https:somesite.som/profile.php">
         <p>Что вы делали прошлым летом?</p>
         <textarea name="comments" cols="100" rows="10">Ваши рассуждения тут...</textarea>
-    </form>
+    </form><br><br>
+   
     <p>Форма-переключатель:</p>
     <form action="https://somesite.som/profile.php"> 
         <p>Выберите язык программирования: <br>
@@ -31,7 +34,8 @@
             <input type="radio" name="genre" value="C++"/>  C++
             <input type="radio" name="genre" value="Ruby"/> Ruby
         </p>
-    </form>
+    </form><br><br>
+   
     <p>Форма-флаг:</p>
     <form action="https://somesite.som/profile.php">
         <p>Выберите редактор кода в котором вы пробовали работать:
@@ -40,9 +44,9 @@
             <input type="checkbox" name="servise" value="sublime"/> sublime
             <input type="checkbox" name="servise" value="notepad++" /> notepad++
             <input type="checkbox" name="servise" value="atom"> atom
-
         </p>
-    </form>
+    </form><br><br>
+    
     <p>Раскрывающийся список</p>
     <form action="https://somesite.som/profile.php">
         <p>Какой режим работы вам удобен?</p>
@@ -51,13 +55,15 @@
             <option value="home">Дома</option>
             <option value="no work">Не работать</option>
         </select>
-    </form>
+    </form><br><br>
+    
     <p>Загрузка файлов на сервер:</p>
     <form action="https://www.somesite.som" method="post">
         <p>Загрузите свой код тут:</p>
         <input type="text" name="codename" /> <input type="file" name="file" /> <br>
         <input type="submit" value="Загрузить" />
-    </form>
+    </form><br><br>
+    
     <p>Кнопка подтверждения:</p>
     <form action="https://www.somesite.som/podpiska.php">
         <p>Подпишись на рассылку новостей:</p>
@@ -65,18 +71,21 @@
         <input type="submit" value="Подписаться" name="subscribe">
         <!-- графическая кнопка получается путем добавления атрибутов
         type="imale" src="адрес image.jpg" wigth="" height="" -->
-    </form>
+    </form><br><br>
+    
     <p> СКРЫТЫЕ элементы</p>
     <form action="https://www.somesite.som/add.php">
         <button><img src="images/add.gif" alt="" width="10" height="10">Добавить</button>
         <input type="hidden"  value="text pesni" />
-    </form>
+    </form><br><br>
+    
+    
     <p>Метки элементов:</p>
     <label>Возраст: <input type="text" name="agge" ></label>
-    <br>
-    Пол:
+    <br> Пол:
     <input type="radio" name="pol" id="female" checked="checked" value="f"> <label for="female">Женский</label>
     <input type="radio" name="pol" id="male" value="m"> <label for="male">Мужской</label>
+    
     
     <p>Группировка элементов форм:</p>
     <fieldset > 
@@ -89,7 +98,8 @@
             Факс: <br>
             <input type="text" name="fax" id=""><br><br>
         </label>
-    </fieldset>
+    </fieldset><br><br>
+    
     <p>Валидация форм</p>
     <form action="http://www.somesite.som/login/" method="POST">
         <label for="username">Имя пользователя</label><br><br>
@@ -97,18 +107,33 @@
         <label for="password">Пароль</label><br><br>
         <input type="password" name="parol" required="required" id=""><br><br>
         <input type="submit" value="Отправить"><br>
-    </form>
+    </form><br><br>
+    
     <p>ВВОД ДАТЫ</p>
     <form action="http://www.somesite.som/bookings/" method="post">
         <label for="depart">Дата вылета</label>
         <input type="date" name="depart" id="">
         <input type="submit" value="Отправить">
-    </form> <br>
+    </form> <br><br>
+    
     <p>ФОРМА ВВОДА Email</p>
-    <form action="https://somesite.som/profile.php" method="POST"></form>
+    <form action="https://somesite.som/profile.php" method="POST">
     <p>Введите адрес электроной почты:</p>
         <input type="email" name="email">
         <input type="submit" value="Отправить">
+    </form><br><br>
+    
+    <p>ФОРМА url-ввода</p>
+    <form action="http://www.somesite.som/profile.php" method="post">
+        <p>Введите адрес сайта:</p>
+        <input type="text" name="siteaddress" id="">
+        <input type="submit" value="Отправить">
+    </form>
+
+
+
+
+
 
   </body>
 </html>

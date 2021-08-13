@@ -33,5 +33,30 @@
         </p>
     </form>
     <p>Форма-флаг:</p>
+    <form action="https://somesite.som/profile.php">
+        <p>Выберите редактор кода в котором вы пробовали работать:
+            <br>
+            <input type="checkbox" name="servise" value="vscode" /> vscode
+            <input type="checkbox" name="servise" value="sublime"/> sublime
+            <input type="checkbox" name="servise" value="notepad++" /> notepad++
+            <input type="checkbox" name="servise" value="atom"> atom
+
+        </p>
+    </form>
+    <p>Раскрывающийся список</p>
+    <form action="https://somesite.som/profile.php">
+        <p>Какой режим работы вам удобен?</p>
+        <select name="work">
+            <option value="office">В офисе</option>
+            <option value="home">Дома</option>
+            <option value="no work">Не работать</option>
+        </select>
+    </form>
+    <p>Загрузка файлов на сервер:</p>
+    <form action="https://www.somesite.som" method="post">
+        <p>Загрузите свой код тут:</p>
+        <input type="file" name="file" /> <br>
+        <input type="submit" value="Загрузить" />
+    </form>
 </body>
 </html>

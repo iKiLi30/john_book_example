@@ -55,8 +55,23 @@
     <p>Загрузка файлов на сервер:</p>
     <form action="https://www.somesite.som" method="post">
         <p>Загрузите свой код тут:</p>
-        <input type="file" name="file" /> <br>
+        <input type="text" name="codename" /> <input type="file" name="file" /> <br>
         <input type="submit" value="Загрузить" />
     </form>
+    <p>Кнопка подтверждения:</p>
+    <form action="https://www.somesite.som/podpiska.php">
+        <p>Подпишись на рассылку новостей:</p>
+        <input type="text" name="email" />
+        <input type="submit" value="Подписаться" name="subscribe">
+        <!-- графическая кнопка получается путем добавления атрибутов
+        type="imale" src="адрес image.jpg" wigth="" height="" -->
+    </form>
+    <p> СКРЫТЫЕ элементы</p>
+    <form action="https://www.somesite.som/add.php">
+        <button><img src="images/add.gif" alt="" width="10" height="10">Добавить</button>
+        <input type="hidden"  value="text pesni" />
+    </form>
+
+
 </body>
 </html>
